@@ -16,9 +16,6 @@ public class Day02 {
             long lower =  Long.parseLong(rp[0]);
             long upper = Long.parseLong(rp[1]);
             long frontHalf = 1;
-            try {
-                Long.parseLong(rp[0].substring(0, rp[0].length()/2));
-            } catch (NumberFormatException e) {}
             long current = Long.parseLong(frontHalf + "" + frontHalf);
             for (; current < upper; frontHalf++) {
                 current = Long.parseLong(frontHalf + "" + frontHalf);
