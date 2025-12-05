@@ -12,9 +12,7 @@ public class Day03 {
         for (String line : lines) {
             char[] chars = line.toCharArray();
             char[] batt = new char[12];
-            for (int i = 0; i < 12; i++) {
-                batt[i] = chars[chars.length-12+i];
-            }
+            System.arraycopy(chars, chars.length - 12, batt, 0, 12);
             for (int i = chars.length-13; i >= 0; i--) {
                 char temp = chars[i];
                 for (int j = 0; j < 12; j++) {
@@ -60,6 +58,9 @@ public class Day03 {
         long partOne = getPartOne(lines);
         long partTwo = getPartTwo(lines);
 
+
+//        day 03 part 1: 16812
+//        day 03 part 2: 166345822896410
         System.out.println("day 03 part 1: " + partOne);
         System.out.println("day 03 part 2: " + partTwo);
     }
