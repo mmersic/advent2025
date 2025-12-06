@@ -78,8 +78,8 @@ public class Day06 {
         long partOne = getPartOne(problems);
         long partTwo = getPartTwo(originalInput);
 
-        System.out.println("day 03 part 1: " + partOne);
-        System.out.println("day 03 part 2: " + partTwo);
+        System.out.println("day 06 part 1: " + partOne);
+        System.out.println("day 06 part 2: " + partTwo);
     }
 
 }
